@@ -276,14 +276,16 @@ hr {
   border: 1px solid #111;
 }
 
-/* endin section */
-.hero {
+/* relevent section  */
+.section-container {
+  max-width: 1280px;
+  margin: 40px auto 100px;
   background-color: #0a0e1a;
   text-align: center;
   padding: 60px 20px;
 }
 
-.hero-badge {
+.section-badge {
   display: inline-block;
   background-color: #1c2333;
   color: #a3aed0;
@@ -293,14 +295,14 @@ hr {
   margin-bottom: 20px;
 }
 
-.hero-title {
+.section-title {
   color: white;
   font-size: 34px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.hero-desc {
+.section-desc {
   color: #a3aed0;
   font-size: 16px;
   max-width: 500px;
@@ -358,7 +360,7 @@ hr {
 /* fotter */
 .site-footer {
   background-color: #0d1b2a;
-  padding: 24px 60px;
+  padding: 70px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;

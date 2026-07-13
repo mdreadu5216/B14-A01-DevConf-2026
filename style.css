@@ -1,95 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
 }
 
 .container {
-    max-width: 1980px;
-    display: grid;
-    justify-self: start;
+  max-width: 1980px;
+  display: grid;
+  justify-self: start;
 }
 
 
 /* header */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 60px;
-    border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  border-bottom: 1px solid #eee;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
 }
 
 nav ul li {
-    text-decoration: none;
-    margin-right: 20px;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 /* button */
 .common-btn {
 
-    background: #2f4bff;
-    color: #fff;
-    border: none;
-    padding: 12px 22px;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: bold;
+  background: #2f4bff;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* speker */
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
 
 .text h1 {
-    font-size: 3em;
-    margin-bottom: 15px;
+  font-size: 3em;
+  margin-bottom: 15px;
 }
+
 .text p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin-bottom: 40px;
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-bottom: 40px;
 }
 
-.button{
-    position: absolute;
-    top: 75%;
-    left: 47%;
+.button {
+  position: absolute;
+  top: 75%;
+  left: 47%;
 }
 
-
+/* Meet the Speakers Section start */
 .speakers {
   padding: 60px 20px;
   text-align: center;
@@ -103,7 +104,7 @@ nav ul li {
 
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   max-width: 1000px;
   margin: 0 auto;
@@ -145,4 +146,241 @@ nav ul li {
   color: #666;
   font-size: 0.95rem;
   margin: 0;
+}
+
+/* Pricing Section start */
+.pricing {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.pricing-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.price-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 30px 24px;
+  text-align: left;
+  background: #fff;
+}
+
+.price-card-featured {
+  background: #0a1128;
+  border: none;
+}
+
+.plan-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+.plan-name-light {
+  color: #6ea8fe;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 8px 0 0;
+}
+
+.price-light {
+  color: #fff;
+}
+
+.price-note {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.price-note-light {
+  color: #b8bfd1;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+}
+
+.hr-light {
+  border-top: 1px solid #2a3352;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.feature-list li::before {
+  content: "•";
+  color: #2563eb;
+  position: absolute;
+  left: 0;
+}
+
+.feature-list-light li {
+  color: #e5e8f0;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.btn-solid {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.btn-dark-outline {
+  background: #fff;
+  color: #111;
+  border: 1px solid #111;
+}
+
+/* endin section */
+.hero {
+  background-color: #0a0e1a;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: #1c2333;
+  color: #a3aed0;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  color: #a3aed0;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+.btn {
+  display: block;
+  width: 280px;
+  margin: 10px auto;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #6a5af9, #38bdf8);
+  color: white;
+  border: none;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: white;
+  border: 1px solid #444;
+}
+
+.stats {
+  margin-top: 40px;
+}
+
+.stat-box {
+  display: inline-block;
+  background-color: #1c2333;
+  width: 130px;
+  padding: 20px 10px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.stat-box h3 {
+  color: white;
+  font-size: 26px;
+  margin: 0 0 5px 0;
+}
+
+.stat-box p {
+  color: #a3aed0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* fotter */
+.site-footer {
+  background-color: #0d1b2a;
+  padding: 24px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  color: #9ca3af;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
 }
